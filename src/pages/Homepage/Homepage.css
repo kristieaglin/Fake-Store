@@ -1,0 +1,10 @@
+.homepage-container{
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
