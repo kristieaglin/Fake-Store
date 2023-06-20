@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, {useEffect, useState} from 'react'
+import CategoryBar from '../../components/CategoryBar/CategoryBar'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import './Homepage.css'
 
@@ -12,7 +13,7 @@ function Homepage() {
         ()=>{
             axios.get(`https://fakestoreapi.com/products`)
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 setProducts(res.data)
                 })
             .catch(err => console.log(err))
@@ -21,6 +22,7 @@ function Homepage() {
 
     return (
         <div className='homepage-container'>
+            <CategoryBar setProducts={setProducts} />
             <div className='card-container'>
                 {
                     products.map(item =><ProductCard key={item.id} product={item} />)

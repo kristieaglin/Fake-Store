@@ -1,0 +1,12 @@
+.bar-container{
+    margin-left: 120px;
+}
+
+.bar-container button{
+    color: #5264C3;
+    border: none;
+    background-color: transparent;
+    margin-left: 30px;
+    font-size: 23px;
+    cursor: pointer;
+}
