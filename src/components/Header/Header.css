@@ -12,9 +12,11 @@
     padding: 20px 40px;
 }
 
-.header-container h1{
+.header-container a{
     color: #3A4895;
     font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .cart-container{

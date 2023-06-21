@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer-container'>
         <p>Made with by &hearts; mimo</p>
-        <button className='contact-btn'>Contact Us</button>
+        <a href='/contactus' className='contact-btn' >Contact Us</a>
     </div>
   )
 }

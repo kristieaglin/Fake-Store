@@ -1,0 +1,58 @@
+.contact-container{
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 100px 200px;
+    margin: 0 300px;
+    background-color: white;
+}
+
+.contact-heading{
+    padding-bottom: 50px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input{
+    background-color: #B4B4B4;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 135%;
+}
+
+.form-container input::placeholder{
+    color: white;
+}
+
+.input1{
+    padding: 10px 15px;
+}
+
+.input2{
+    padding: 10px 15px 75px;
+}
+
+.submit-btn{
+    background-color: #5264C3;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    padding: 15px 60px;
+    margin: 25px;
+    cursor: pointer;
+}
