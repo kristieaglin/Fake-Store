@@ -35,6 +35,15 @@
     margin-top: 10px;
 }
 
+.product-info a{
+    color: black;
+    text-decoration: none;
+}
+
+.product-info a:hover{
+    color: #3A4895;
+}
+
 .product-category{
     font-size: 12px;
     color: #949494;

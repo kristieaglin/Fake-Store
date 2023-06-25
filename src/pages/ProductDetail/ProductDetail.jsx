@@ -24,14 +24,18 @@ function ProductDetail() {
 
   return (
     <div className='details-container'>
-      <img src={product?.image} />
-      <div className='details-info'>
-        <h2>{product?.title}</h2>
-        <h2>{product?.price?.toFixed()}€</h2>
-        <h3>Description</h3>
-        <p>{product?.description}</p>
+      <div className='details-card'>
+        <div className='image-container'>
+          <img src={product?.image} />
+        </div>
+        <div className='details-info'>
+          <h2>{product?.title}</h2>
+          <h2>{product?.price?.toFixed()}€</h2>
+          <h3>Description</h3>
+          <p>{product?.description}</p>
+          <button>Add to Cart</button>
+        </div>
       </div>
-      <button>Add to cart</button>
     </div>
   )
 }

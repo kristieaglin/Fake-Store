@@ -1,0 +1,41 @@
+.details-container{
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+
+.details-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 115px 200px;
+    margin: 0 300px;
+    background-color: white;
+}
+
+.image-container{
+    height: 30%;
+    width: 40%;
+}
+
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.details-info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.details-info button{
+    background-color: #FFD814;
+    border: none;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 700;
+}

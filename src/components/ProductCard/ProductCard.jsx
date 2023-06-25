@@ -12,7 +12,7 @@ function ProductCard({product}) {
         </div>    
         <div className='product-info'>
             <div>
-                <h2>{product?.title.slice(0,91)}</h2>
+                <h2><a href={`/details/${product?.id}`}>{product?.title.slice(0,91)}</a></h2>
                 <p className='product-category'>{product?.category.charAt(0).toUpperCase()+product?.category.slice(1)}</p>
             </div>
             <p className='product-price'>{product?.price?.toFixed()}€</p>
