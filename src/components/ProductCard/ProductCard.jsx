@@ -15,7 +15,7 @@ function ProductCard({product}) {
                 <h2>{product?.title.slice(0,91)}</h2>
                 <p className='product-category'>{product?.category.charAt(0).toUpperCase()+product?.category.slice(1)}</p>
             </div>
-            <p className='product-price'>{product?.price.toFixed()}€</p>
+            <p className='product-price'>{product?.price?.toFixed()}€</p>
         </div>
         <IoHeartCircleSharp className='heart-icon' />
     </div>
