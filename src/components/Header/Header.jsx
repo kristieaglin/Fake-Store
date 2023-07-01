@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Header.css'
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Link } from 'react-router-dom';
+import { CartContext } from '../../contexts/CartContext';
 
 
 function Header() {
+  const {cart} = useContext(CartContext)
+
   return (
     <div className='header-container'>
-        <a href='/'>Fake Store</a>
+        <Link to='/'>Fake Store</Link>
         <div className='cart-container'>
-            <AiOutlineShoppingCart className='cart-icon' />
-            <p>1</p>
+            <Link to='/checkout'>
+              <AiOutlineShoppingCart className='cart-icon' />
+              <p>{cart.length}</p>
+            </Link>   
         </div>
     </div>
   )

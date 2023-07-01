@@ -25,7 +25,7 @@
 }
 
 .cart-icon{
-    font-size: 2.75em;
+    font-size: 1.5em;
     color: #3A4895;
 }
 
@@ -36,6 +36,6 @@
     padding: 1px 7px;
     border-radius: 15px;
     position: absolute;
-    right: 49px;
+    right: 47px;
     top: 23px;
 }

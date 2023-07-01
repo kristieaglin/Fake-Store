@@ -55,10 +55,18 @@
     font-weight: 600;
 }
 
-.heart-icon{
+.empty-cart-icon{
     position: relative;
     bottom: 310px;
     left: 150px;
     font-size: 2em;
     color: #E7E7E7;
+}
+
+.heart-icon{
+    position: relative;
+    bottom: 310px;
+    left: 150px;
+    font-size: 2em;
+    color: #3A4895;
 }
