@@ -1,9 +1,21 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import './ProductDetail.css'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { CartContext } from '../../contexts/CartContext'
 
 function ProductDetail() {
+  const {cart, addProduct, removeProduct} = useContext(CartContext)
+
+  const [addedToCart, setAddedToCart] = useState(false)
+
+   useEffect(
+    ()=>{
+      //is this product in the cart
+      setAddedToCart(cart.find(item=> item.id == product.id))
+    }, [cart]
+   )
+
   //id retrieval from params
   const {productId} = useParams()
 
@@ -33,7 +45,12 @@ function ProductDetail() {
           <h2>{product?.price?.toFixed()}€</h2>
           <h3>Description</h3>
           <p>{product?.description}</p>
-          <button>Add to Cart</button>
+          {
+            addedToCart?
+            <button onClick={()=>removeProduct(product?.id)}>Remove</button>
+            :
+            <button onClick={()=>addProduct(product)}>Add to Cart</button>
+          }
         </div>
       </div>
     </div>

@@ -61,6 +61,7 @@
     left: 150px;
     font-size: 2em;
     color: #E7E7E7;
+    cursor: pointer;
 }
 
 .heart-icon{
@@ -69,4 +70,5 @@
     left: 150px;
     font-size: 2em;
     color: #3A4895;
+    cursor: pointer;
 }

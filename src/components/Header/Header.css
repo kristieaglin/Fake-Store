@@ -25,17 +25,17 @@
 }
 
 .cart-icon{
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: #3A4895;
 }
 
 .cart-container p{
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     background-color: #F90505;
-    padding: 1px 7px;
+    padding: 3px 7px;
     border-radius: 15px;
     position: absolute;
-    right: 47px;
+    right: 48px;
     top: 23px;
 }

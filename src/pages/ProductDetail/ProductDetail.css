@@ -38,4 +38,11 @@
     padding: 15px 40px;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.details-info button:hover{
+    border: 1px black solid;
+    padding: 14px 40px;
+    /* border-radius: 10px; */
 }

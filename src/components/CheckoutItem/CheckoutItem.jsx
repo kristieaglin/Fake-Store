@@ -6,7 +6,7 @@ import { CartContext } from '../../contexts/CartContext';
 //BsTrash
 
 function CheckoutItem({product}) {
-  const {cart, removeProduct} = useContext(CartContext)
+  const { removeProduct } = useContext(CartContext)
         
   return (
     <div className='item-container'>

@@ -1,20 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import './Checkout.css'
 import { CartContext } from '../../contexts/CartContext'
 import CheckoutItem from '../../components/CheckoutItem/CheckoutItem';
 
 function Checkout() {
     const {cart} = useContext(CartContext)
-    console.log(cart)
-    // console.log(cart[0].price)
-
-    const calculatePrice = () =>{
-            for (let i=0; i < cart.length; i++){
-                let cartTotal = cart[i].price++;
-                console.log(cartTotal)
-            }
+    
+    //initial cart value
+    let cartTotal = 0
+    //calculate total price of cart
+    const calculateTotal = () =>{
+        for (let i=0; i < cart.length; i++){
+            cartTotal += cart[i].price;
+        }
+        console.log('total',cartTotal)
+        return cartTotal
     }
-    calculatePrice()
+    calculateTotal()
 
   return (
     <div className='checkout-container'>
@@ -35,7 +37,7 @@ function Checkout() {
                 <p>Your cart is currently empty.</p>
             }
             </div>
-            <p className='total'>Total €</p>
+            <p className='total'>Total {cartTotal?.toFixed()}€</p>
             <button className='checkout-btn'>Checkout</button>
         </div>
         
