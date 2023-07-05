@@ -72,3 +72,27 @@
     color: #3A4895;
     cursor: pointer;
 }
+
+@media screen and (max-width: 660px) {
+    .product-card{
+        margin: 30px 10px;
+        width: 195px;
+    }
+
+    .img-container{
+        width: 155px;
+    }
+
+    .img-container img{
+        width: 75%;
+        height: 75%;
+    }
+
+    .empty-cart-icon{
+        left: 115px;
+    }
+    
+    .heart-icon{
+        left: 115px;
+    }
+  }

@@ -41,8 +41,40 @@
     cursor: pointer;
 }
 
-.details-info button:hover{
-    border: 1px black solid;
-    padding: 14px 40px;
-    /* border-radius: 10px; */
+@media screen and (max-width: 1240px) {
+    .details-card{
+        flex-direction: column;
+        padding: 50px 0 50px;
+        margin: 0 100px;
+    }
+
+    .image-container{
+        margin-bottom: 30px;
+    }
+
+    .details-info button{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .image-container{
+        height: 40%;
+        width: 50%;
+        margin: 0 40px 40px;
+    }
+
+    .details-info{
+        width: 75%;
+        gap: 25px;
+    }
+
+    .details-info h2{
+        font-size: 20px;
+    }
+
+    .details-info h3{
+        font-size: 18px;
+        font-weight: 600;
+    }
 }

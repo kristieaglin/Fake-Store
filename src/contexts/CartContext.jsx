@@ -44,8 +44,15 @@ export default function CartContextProvider(props){
         setCart(newCart)
     }
 
+    const emptyCart = (allProducts) =>{
+        console.log('empty', allProducts)
+        //remove all product
+        let newCart = cart.splice(0, cart.splice)
+        setCart(newCart)
+    }
+
     return(
-        <CartContext.Provider value={{cart, addProduct, removeProduct}}>
+        <CartContext.Provider value={{cart, addProduct, removeProduct, emptyCart}}>
             {props.children}
         </CartContext.Provider>
     )
